@@ -1,11 +1,21 @@
 import React from 'react';
+import AllPosts from "../../components/posts/all-posts";
+import {getAllPosts} from "../../lib/posts-util";
 
-const AllPostsPage = () => {
+const AllPostsPage = (props) => {
     return (
-        <div>
-            <h1>All post page</h1>
-        </div>
+        <AllPosts posts={props.posts}/>
     );
 };
+
+export function getStaticProps(){
+    const allPosts = getAllPosts()
+
+    return {
+        props:{
+            posts: allPosts
+        }
+    }
+}
 
 export default AllPostsPage;
