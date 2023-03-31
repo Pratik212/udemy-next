@@ -92,7 +92,7 @@ const ContactForm = () => {
             <section className={classes.contact}>
                 <h1>How can I help you?</h1>
                 <form className={classes.form} onSubmit={sendMessageHandler}>
-                    <div className={classes.control}>
+                    <div className={classes.controls}>
                         <div className={classes.control}>
                             <label htmlFor="email">Your Email</label>
                             <input type="email" id='email' required value={enteredEmail}
@@ -104,7 +104,7 @@ const ContactForm = () => {
                                    onChange={e => setEnteredName(e.target.value)}/>
                         </div>
                     </div>
-                    <div className={classes.control}>
+                    <div className={classes.controls}>
                         <label htmlFor='message'>Your Message</label>
                         <textarea
                             id='message'
