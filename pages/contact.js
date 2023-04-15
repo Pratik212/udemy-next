@@ -8,7 +8,7 @@ const ContactPage = () => {
             <Head>
                 <title>Contact Me</title>
                 <meta name="description" content='Send me your messages!'/>
-            </Head>/
+            </Head>
         <ContactForm/>
         </>
     );
